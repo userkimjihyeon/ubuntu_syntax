@@ -1,4 +1,5 @@
 # 쉘스크립트 작성 : 반드시 확장자 .sh
+-> 실행권한(x) 반드시 있어야함
 touch myscript.sh
 nano myscript.sh  -> Ctrl+O, X
 echo "hello world"
@@ -59,12 +60,13 @@ echo "count value is $count"
 # for문 및 변수값 세팅 활용 : 현재폴더에서 파일개수와 디렉토리개수 계산
 file_count=0
 dir_count=0
-for a in *
+for i in *
 do
- if [ -f "$i" ]; then
+ if [ -f "$i" ]; then       //파일이 있으면
   let file_count=file_count+1
  else
   let dir_count=dir_count+1
+ fi
 done
 echo "filecount is $file_count"
 echo "dircount is $dir_count"

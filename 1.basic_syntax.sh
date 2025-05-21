@@ -77,7 +77,8 @@ echo "hello world" > first_file.txt
 # cp 복사대상 복사될파일명
 # 폴더 복사시에는 -r 옵션
 cp 1_file.txt 2_file.txt
-cp 1_file.txt ../2_file.txt (상위폴더(상대경로) 이동)
+cp 1_file.txt ../2_file.txt (상위폴더(상대경로)로 복사)
+-> mv는 이동 및 리네임
 
 # grep : 파일 내에서 '문자열' 찾기
 # r:모든디렉토리내, n:라인수출력, i:대소문자구분없이
